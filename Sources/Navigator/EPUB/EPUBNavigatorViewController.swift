@@ -1061,6 +1061,9 @@ extension EPUBNavigatorViewController: EPUBSpreadViewDelegate {
         present(viewController, animated: true)
     }
 
+    func spreadViewDidTerminate() {
+        reloadSpreads(force: true)
+    }
 }
 
 extension EPUBNavigatorViewController: EditingActionsControllerDelegate {

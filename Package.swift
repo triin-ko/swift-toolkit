@@ -27,7 +27,7 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", "1.5.1"..<"1.6.0"),
         .package(url: "https://github.com/marmelroy/Zip.git", from: "2.1.2"),
         .package(url: "https://github.com/ra1028/DifferenceKit.git", from: "1.3.0"),
-        .package(url: "https://github.com/readium/GCDWebServer.git", from: "3.7.3"),
+        .package(url: "https://github.com/readium/GCDWebServer.git", from: "3.7.5"),
         .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.4.3"),
         // 0.14 introduced a breaking change
         .package(url: "https://github.com/stephencelis/SQLite.swift.git", "0.12.0"..<"0.13.3"),

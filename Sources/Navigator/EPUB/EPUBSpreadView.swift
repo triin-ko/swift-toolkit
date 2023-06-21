@@ -38,6 +38,8 @@ protocol EPUBSpreadViewDelegate: AnyObject {
     
     /// Called when the user released a key and it was not handled by the resource.
     func spreadView(_ spreadView: EPUBSpreadView, didReleaseKey event: KeyEvent)
+
+    func spreadViewDidTerminate()
 }
 
 class EPUBSpreadView: UIView, Loggable, PageView {
@@ -486,7 +488,7 @@ extension EPUBSpreadView: WKNavigationDelegate {
     }
 
     func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
-        loadSpread()
+        delegate?.spreadViewDidTerminate()
     }
 }
 
