@@ -357,6 +357,6 @@ public class PublicationServer: ResourcesServer, Loggable {
     }
 
     // Mapping between endpoint and the matching container.
-    @available(*, unavailable, message: "`Container` is not used anymore in the `PublicationServer")
-    public private(set) var containers: [String: Container] = [:]
+    //@available(*, unavailable, message: "`Container` is not used anymore in the `PublicationServer")
+    //public private(set) var containers: [String: Container] = [:]
 }
